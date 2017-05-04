@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicalstructureapp.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/artistsTextView"
+            style="@style/ListTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.10"
+            android:gravity="center"
+            android:text="Artists"/>
+
+        <TextView
+            android:id="@+id/albumsTextView"
+            style="@style/ListTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:gravity="center"
+            android:text="Albums"/>
+
+        <TextView
+            android:id="@+id/playlistsTextView"
+            style="@style/ListTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:gravity="center"
+            android:text="Playlists"/>
+    </LinearLayout>
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="46dp">
+
+        <ListView
+            android:id="@+id/artistsListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:entries="@array/artists"
+            android:visibility="visible">
+
+        </ListView>
+
+        <ListView
+            android:id="@+id/albumsListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:entries="@array/albums"
+            android:visibility="gone"/>
+
+        <ListView
+            android:id="@+id/playlistsListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:entries="@array/playlists"
+            android:visibility="gone"/>
+    </ViewFlipper>
+
+</LinearLayout>
