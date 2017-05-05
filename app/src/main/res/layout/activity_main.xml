@@ -21,7 +21,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.10"
             android:gravity="center"
-            android:text="Artists"/>
+            android:text="@string/artists"/>
 
         <TextView
             android:id="@+id/albumsTextView"
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.10"
             android:gravity="center"
-            android:text="Albums"/>
+            android:text="@string/albums"/>
 
         <TextView
             android:id="@+id/playlistsTextView"
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.10"
             android:gravity="center"
-            android:text="Playlists"/>
+            android:text="@string/playlists"/>
     </LinearLayout>
 
     <ViewFlipper

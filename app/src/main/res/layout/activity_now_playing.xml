@@ -26,7 +26,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
         android:gravity="center"
-        android:text="This is the best song title "/>
+        android:text="@string/this_is_the_best_song_title"/>
 
     <TextView
         android:id="@+id/artistName"
@@ -36,7 +36,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:gravity="center"
-        android:text="This is the artist name"/>
+        android:text="@string/this_is_the_artist_name"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -51,21 +51,33 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@android:drawable/ic_media_previous"/>
+            app:srcCompat="@android:drawable/ic_media_previous"
+            android:contentDescription="@string/previous_song"/>
 
         <ImageButton
             android:id="@+id/playPause"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@android:drawable/ic_media_play"/>
+            app:srcCompat="@android:drawable/ic_media_play"
+            android:contentDescription="@string/play_or_pause_song"/>
 
         <ImageButton
             android:id="@+id/next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@android:drawable/ic_media_next"/>
+            app:srcCompat="@android:drawable/ic_media_next"
+            android:contentDescription="@string/next_song"/>
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:text="@string/now_playing_implementation_guide"/>
 
 </RelativeLayout>

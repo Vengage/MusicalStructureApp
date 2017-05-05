@@ -1,33 +1,12 @@
 <resources>
     <string name="app_name">Musical Structure App</string>
-    <string-array name="artists">
-        <item>Chris Brown</item>
-        <item>Lil Wayne</item>
-        <item>Drake</item>
-        <item>Justin Bieber</item>
-        <item>Selena Gomez</item>
-        <item>Ricky Martin</item>
-        <item>Shakira</item>
-        <item>Maluma</item>
-    </string-array>
-
-    <string-array name="albums">
-        <item>More Life</item>
-        <item>I see you</item>
-        <item>Divide</item>
-        <item>Gang Sings and Prayer</item>
-        <item>I Decided</item>
-        <item>Love and War</item>
-        <item>Humanz</item>
-        <item>HNDRXX</item>
-    </string-array>
-
-    <string-array name="playlists">
-        <item>Favourite Songs</item>
-        <item>Best of Hip Hop</item>
-        <item>2016</item>
-        <item>Workout Running</item>
-        <item>Workout Gym</item>
-        <item>Good Times</item>
-    </string-array>
+    <string name="this_is_the_best_song_title">This is the best song title</string>
+    <string name="this_is_the_artist_name">This is the artist name</string>
+    <string name="previous_song">Previous Song</string>
+    <string name="play_or_pause_song">Play or Pause song</string>
+    <string name="next_song">Next Song</string>
+    <string name="now_playing_implementation_guide">For this activity to work I would use the MediaPlayer class.</string>
+    <string name="artists">Artists</string>
+    <string name="albums">Albums</string>
+    <string name="playlists">Playlists</string>
 </resources>
